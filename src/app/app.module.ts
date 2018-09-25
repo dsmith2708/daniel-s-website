@@ -2,7 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { MatSidenavModule } from '@angular/material';
+import { MatSidenavModule, MatButtonModule, MatToolbarModule } from '@angular/material';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -10,7 +11,10 @@ import { MatSidenavModule } from '@angular/material';
   ],
   imports: [
     BrowserModule,
-    MatSidenavModule
+    MatSidenavModule,
+    MatButtonModule,
+    MatToolbarModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
