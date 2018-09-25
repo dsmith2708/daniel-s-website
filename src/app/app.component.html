@@ -1,15 +1,16 @@
-<mat-sidenav-container class="main-content-container">
-  <mat-sidenav class="sidenav-area" #sidenav [mode]="over">
+<mat-sidenav-container class="full-container-height">
+  <mat-sidenav class="sidenav-area full-container-height" #sidenav [mode]="over">
     <button mat-button (click)="sidenav.toggle()">TOGGLE</button>
   </mat-sidenav>
 
-  <mat-sidenav-content class="main-content-area">
+  <mat-sidenav-content class="full-container-height">
     <mat-toolbar>
-        <button mat-button (click)="sidenav.toggle()">TOGGLE</button>
+      <button mat-button class="material-header-button" (click)="sidenav.toggle()"><i class="fas fa-bars large-icon"></i></button>
+      <h1 class=large-font>Homepage</h1>
     </mat-toolbar>
 
 
-    
+
     <!--The content below is only a placeholder and can be replaced.-->
     <div style="text-align:center">
       <h1>
