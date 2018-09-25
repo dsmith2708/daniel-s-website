@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+import { appRoutes } from './app.routes';
 
 import { AppComponent } from './app.component';
 import { MatSidenavModule, MatButtonModule, MatToolbarModule } from '@angular/material';
@@ -22,7 +24,10 @@ import { HobbiesAndInterestsComponent } from './components/hobbies-and-interests
     MatSidenavModule,
     MatButtonModule,
     MatToolbarModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    RouterModule.forRoot(
+      appRoutes
+    )
   ],
   providers: [],
   bootstrap: [AppComponent]
