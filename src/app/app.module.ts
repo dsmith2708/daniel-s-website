@@ -10,6 +10,7 @@ import { AboutMeComponent } from './components/about-me/about-me.component';
 import { MyCvComponent } from './components/my-cv/my-cv.component';
 import { PreviousProjectsComponent } from './components/previous-projects/previous-projects.component';
 import { HobbiesAndInterestsComponent } from './components/hobbies-and-interests/hobbies-and-interests.component';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { HobbiesAndInterestsComponent } from './components/hobbies-and-interests
     AboutMeComponent,
     MyCvComponent,
     PreviousProjectsComponent,
-    HobbiesAndInterestsComponent
+    HobbiesAndInterestsComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
