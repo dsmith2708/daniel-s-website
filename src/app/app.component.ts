@@ -7,5 +7,7 @@ import { MatSidenavModule } from '@angular/material';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'daniel-s-website';
+  title = 'Daniel Smith Portfolio';
+
+  pageTitle = 'Home';
 }
