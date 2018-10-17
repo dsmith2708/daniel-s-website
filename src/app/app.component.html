@@ -1,14 +1,37 @@
 <mat-sidenav-container class="full-container-height">
   <mat-sidenav class="sidenav-area full-container-height" #sidenav [mode]="over">
-    <button mat-button (click)="sidenav.toggle()">TOGGLE</button>
+      <button mat-button class="sidenav-top-btn-container sidenav-item" (click)="sidenav.toggle()">
+        <i class="fas fa-bars large-icon icon-height-corrector container-left"></i>
+        <span>Close Menu</span>
+      </button>
+      <button mat-button class="sidenav-top-btn-container sidenav-item" routerLink="/home" (click)="sidenav.toggle()">
+        <i class="fas fa-home large-icon icon-height-corrector container-left"></i>
+        <span>Homepage</span>
+      </button>
+      <button mat-button class="sidenav-top-btn-container sidenav-item" routerLink="/about-me" (click)="sidenav.toggle()">
+        <i class="fas fa-info-circle large-icon icon-height-corrector container-left"></i>
+        <span>about-me</span>
+      </button>
+      <button mat-button class="sidenav-top-btn-container sidenav-item" routerLink="/hobbies-interests" (click)="sidenav.toggle()">
+        <i class="fas fa-car large-icon icon-height-corrector container-left"></i>
+        <span>Hobbies / Interests</span>
+      </button>
+      <button mat-button class="sidenav-top-btn-container sidenav-item" routerLink="/my-cv" (click)="sidenav.toggle()">
+        <i class="fas fa-edit large-icon icon-height-corrector container-left"></i>
+        <span>My CV</span>
+      </button>
+      <button mat-button class="sidenav-top-btn-container sidenav-item" routerLink="/previous-projects" (click)="sidenav.toggle()">
+        <i class="fas fa-history large-icon icon-height-corrector container-left"></i>
+        <span>Previous Projects</span>
+      </button>
   </mat-sidenav>
 
 
-    <mat-toolbar>
-      <button mat-button class="material-header-button" (click)="sidenav.toggle()"><i class="fas fa-bars large-icon"></i></button>
-      <h1 class=large-font>{{pageTitle}}</h1>
-    </mat-toolbar>
+  <mat-toolbar>
+    <button mat-button class="material-header-button" (click)="sidenav.toggle()"><i class="fas fa-bars large-icon"></i></button>
+    <h1 class=large-font>{{pageTitle}}</h1>
+  </mat-toolbar>
 
-    <router-outlet class="full-container-height" id="router-outlet"></router-outlet>
+  <router-outlet class="full-container-height" id="router-outlet"></router-outlet>
 
 </mat-sidenav-container>
