@@ -1,29 +1,30 @@
 <mat-sidenav-container class="full-container-height">
   <mat-sidenav class="sidenav-area full-container-height" #sidenav [mode]="over">
-      <button mat-button class="sidenav-top-btn-container sidenav-item" (click)="sidenav.toggle()">
-        <i class="fas fa-bars large-icon icon-height-corrector container-left"></i>
-        <span>Close Menu</span>
-      </button>
-      <button mat-button class="sidenav-top-btn-container sidenav-item" routerLink="/home" (click)="sidenav.toggle()">
-        <i class="fas fa-home large-icon icon-height-corrector container-left"></i>
-        <span>Homepage</span>
-      </button>
-      <button mat-button class="sidenav-top-btn-container sidenav-item" routerLink="/about-me" (click)="sidenav.toggle()">
-        <i class="fas fa-info-circle large-icon icon-height-corrector container-left"></i>
-        <span>about-me</span>
-      </button>
-      <button mat-button class="sidenav-top-btn-container sidenav-item" routerLink="/hobbies-interests" (click)="sidenav.toggle()">
-        <i class="fas fa-car large-icon icon-height-corrector container-left"></i>
-        <span>Hobbies / Interests</span>
-      </button>
-      <button mat-button class="sidenav-top-btn-container sidenav-item" routerLink="/my-cv" (click)="sidenav.toggle()">
-        <i class="fas fa-edit large-icon icon-height-corrector container-left"></i>
-        <span>My CV</span>
-      </button>
-      <button mat-button class="sidenav-top-btn-container sidenav-item" routerLink="/previous-projects" (click)="sidenav.toggle()">
-        <i class="fas fa-history large-icon icon-height-corrector container-left"></i>
-        <span>Previous Projects</span>
-      </button>
+    <button mat-button style="display: hidden; min-height: 0; min-width: 0; width: 0; height: 0; float: left;"></button>
+    <button mat-button class="sidenav-top-btn-container sidenav-item" routerLink="/home" (click)="sidenav.toggle()">
+      <i class="fas fa-home large-icon icon-height-corrector container-left"></i>
+      <span>Homepage</span>
+    </button>
+    <button mat-button class="sidenav-top-btn-container sidenav-item" routerLink="/about-me" (click)="sidenav.toggle()">
+      <i class="fas fa-info-circle large-icon icon-height-corrector container-left"></i>
+      <span>about-me</span>
+    </button>
+    <button mat-button class="sidenav-top-btn-container sidenav-item" routerLink="/hobbies-interests" (click)="sidenav.toggle()">
+      <i class="fas fa-car large-icon icon-height-corrector container-left"></i>
+      <span>Hobbies / Interests</span>
+    </button>
+    <button mat-button class="sidenav-top-btn-container sidenav-item" routerLink="/my-cv" (click)="sidenav.toggle()">
+      <i class="fas fa-edit large-icon icon-height-corrector container-left"></i>
+      <span>My CV</span>
+    </button>
+    <button mat-button class="sidenav-top-btn-container sidenav-item" routerLink="/previous-projects" (click)="sidenav.toggle()">
+      <i class="fas fa-history large-icon icon-height-corrector container-left"></i>
+      <span>Previous Projects</span>
+    </button>
+    <a mat-button class="sidenav-top-btn-container sidenav-item" href="https://github.com/dsmith2708">
+      <i class="fas fa-external-link-square-alt large-icon icon-height-corrector container-left"></i>
+      <span>My Github</span>
+    </a>
   </mat-sidenav>
 
 
