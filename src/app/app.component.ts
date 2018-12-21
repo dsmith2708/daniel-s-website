@@ -16,7 +16,7 @@ export class AppComponent {
     {route: '/previous-projects', name: 'Previous Projects'}
   ] ;
   title = 'Daniel Smith Portfolio';
-  pageTitle = 'Home';
+  pageTitle = 'Homey';
 
   constructor(activatedRoute: ActivatedRoute, public router: Router) {
     this.router.events.pipe(
