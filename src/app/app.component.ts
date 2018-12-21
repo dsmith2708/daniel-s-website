@@ -20,8 +20,7 @@ export class AppComponent {
 
   constructor(activatedRoute: ActivatedRoute, public router: Router) {
     this.router.events.pipe(
-      filter((event) => event instanceof NavigationEnd),
-      debounceTime(1000)
+      filter((event) => event instanceof NavigationEnd)
     ).subscribe(
       x => {
         this.setPageTitle((x as any).urlAfterRedirects);
