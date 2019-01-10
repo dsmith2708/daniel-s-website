@@ -2,3 +2,8 @@
     padding-left: 12%;
     padding-right: 12%;
 }
+h2 {
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
